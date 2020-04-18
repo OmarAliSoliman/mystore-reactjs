@@ -12,17 +12,15 @@ function loadState(){
 
   }
 
-  return{
-    cart: []
-  }
-}
 
-const initialState = {
-  cart:[]
+  return{
+    cart: [],
+  }
 }
 
 function saveState(state){
   localStorage.setItem('cart', JSON.stringify(state));
+  // localStorage.setItem('dark', JSON.stringify(darkMode));
 }
 
 const store = createStore(crateReducers, loadState());

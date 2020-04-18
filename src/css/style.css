@@ -1,8 +1,25 @@
+.light-mode {
+  background-color: #fff; }
+
+.dark-mode {
+  background-color: #1a1919;
+  color: #999; }
+
+.dark-mode nav {
+  background-color: #1b2938 !important; }
+.dark-mode .sidenav {
+  background-color: #1b2938 !important; }
+  .dark-mode .sidenav a {
+    color: #fff; }
+
 .navbar {
   background-color: #fff !important;
   box-sizing: border-box;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
+  .navbar .btn-dark-mode {
+    position: absolute;
+    left: 50%; }
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 25px;
     color: #0074E4 !important; }
@@ -191,13 +208,14 @@
 
 .cart-page .total-price {
   font-size: 25px;
-  margin-top: 20px;
   display: inline-block; }
   .cart-page .total-price .total-price-number {
     color: #0074E4; }
+.cart-page .cart-item-not-Found {
+  height: 100vh; }
 
 .cart-item-component {
-  margin-top: 40px; }
+  margin-top: 70px; }
   .cart-item-component .card {
     border: 1px solid #DDD !important;
     border-radius: 0 !important;
@@ -235,7 +253,8 @@
 
 .error-message {
   text-align: center;
-  margin-top: 10% !important; }
+  margin-top: 10% !important;
+  height: 100vh; }
 
 .coundown-number {
   color: #0074E4;

@@ -1,4 +1,4 @@
-import {ADD_TO_CART, REMOVE_FROM_CART, PLACE_ORDER} from './Typed';
+import {ADD_TO_CART, REMOVE_FROM_CART, PLACE_ORDER, CHANGE_TO_DARK_MODE} from './Typed';
 
 export function addToCart(productInfo, quantity, sale){
   return{

@@ -47,7 +47,7 @@ class Cart extends Component{
               </h4>)}
           </div>
         </div>
-        {this.props.totalPrice > 0 ? (<Footer />):(null)}
+        <Footer />
       </div>
     )
   }

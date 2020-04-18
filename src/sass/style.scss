@@ -13,11 +13,36 @@ $navLinkColor: #000;
 //   z-index: 999;
 // }
 
+.light-mode{
+  background-color: #fff;
+}
+
+.dark-mode{
+  background-color: #1a1919;
+  color: #999;
+}
+
+.dark-mode{
+  nav{
+    background-color: #1b2938 !important;
+  }
+  .sidenav{
+    background-color: #1b2938 !important;
+    a{
+      color: $linkColor;
+    }
+  }
+}
+
 .navbar{
   background-color: $linkColor !important;
   box-sizing: border-box;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  .btn-dark-mode{
+    position: absolute;
+    left: 50%;
+  }
   .navbar-nav{
     .nav-item{
       .nav-link{
@@ -279,17 +304,19 @@ $navLinkColor: #000;
 .cart-page{
   .total-price{
     font-size: 25px;
-    margin-top: 20px;
     display: inline-block;
     .total-price-number{
       color: $mainColor;
     }
   }
+  .cart-item-not-Found{
+    height: 100vh;
+  }
 }
 
 // cartItem Component
 .cart-item-component{
-  margin-top: 40px;
+  margin-top: 70px;
   .card{
     border: 1px solid #DDD !important;
     border-radius: 0 !important;
@@ -337,6 +364,7 @@ $navLinkColor: #000;
 .error-message{
   text-align: center;
   margin-top: 10% !important;
+  height: 100vh;
 }
 
 // counter down Component

@@ -20,7 +20,7 @@ class CartItem extends Component{
           <div className="card-body">
             <h5 className="card-title"><span className="product-prise">Price:</span> {product.price}$ </h5>
             <p className="card-text"><span className="product-quantity">Quantity:</span> {cartitem.quantity} </p>
-            <p classname="card-text">{product.descreption}</p>
+            <p className="card-text">{product.descreption}</p>
             <span className="product-sale">
               {product.id >= 7 ?(<span> Sale:{product.sale}% </span>):"no sale"}
             </span><br />

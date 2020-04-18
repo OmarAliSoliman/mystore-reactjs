@@ -84,7 +84,7 @@ class ProductDetails extends Component{
               <p className="product-description"> {product.descreption} </p>
               <input className="product-quantity" type="number" value={this.state.quantity} min="1" onChange={this.updateQuantity} />
               <h5>Total: <span className="product-total">{this.state.quantity * product.price}$</span></h5>
-              <Link className="btn" onClick={()=>this.addToCart(product)}>add to cart</Link>
+              <button className="btn" onClick={()=>this.addToCart(product)}>add to cart</button>
               <Link to="/products" className="btn btn-danger">cansel</Link>
             </div>
           </div>
