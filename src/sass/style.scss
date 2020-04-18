@@ -1,0 +1,458 @@
+$mainColor: #0074E4;
+$secondColor: #3A001E;
+$thirdColor: #FA3F07;
+$linkColor: #fff;
+$navLinkBackground: #fff;
+$navLinkColor: #000;
+
+// Desktop Navbar
+
+// .sticy-nav{
+//   position: sticky;
+//   top: -10px;
+//   z-index: 999;
+// }
+
+.navbar{
+  background-color: $linkColor !important;
+  box-sizing: border-box;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        padding: 25px;
+        color: $mainColor !important;
+      }
+      .active{
+        background-color: $mainColor;
+        color: $linkColor !important;
+      }
+    }
+  }
+}
+
+// mobile Navbar
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: $linkColor;
+  // bordeR: 1px solid #DDD;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $navLinkColor;
+    display: block;
+    transition: 0.3s;
+    &:hover{
+      color: $mainColor;
+    }
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: $navLinkColor;
+    cursor: pointer;
+  }
+  .mobile-active-link{
+    background-color: $mainColor;
+    color: $linkColor !important;
+  }
+}
+
+.side-nav-button{
+  display: none;
+  padding: 20px !important;
+  background-color: $mainColor !important;
+  box-sizing: border-box;
+  i{
+    color: $linkColor !important;
+    cursor: pointer;
+    font-size: 30px;
+  }
+}
+
+// component Cart Icon
+.cart-icon{
+  i{
+    font-size: 30px;
+    margin-right: 16px;
+    color: $mainColor;
+  }
+  .shopping_cart{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+  }
+  .badge_number{
+    position: absolute;
+    top: 6%;
+    right: 2%;
+  }
+}
+
+// Home Page
+.home-page{
+  .row{
+    margin: 0 !important;
+  }
+  .anim-image{
+    position: absolute;
+    animation:  header-image-animatopn 4s linear infinite;
+  }
+  .header-image{
+    text-align: left;
+    img{
+      width: 100% !important;
+      margin-left: -65px !important;
+    }
+  }
+  .content{
+    margin-top: 25%;
+    margin-left: 30px;
+    h3{
+      font-size: 60px;
+    }
+    p{
+      font-size: 20px;
+    }
+    .btn{
+      background-color: $mainColor !important;
+      color: $linkColor !important;
+      padding: 10px !important;
+      width: 40% !important;
+    }
+  }
+}
+
+// products page
+.products-page{
+  .input-group{
+    input[type=text]{
+      &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+    .btn{
+      border: 1px solid $mainColor !important;
+      background-color: $mainColor !important;
+      color: $linkColor !important;
+      transition: all 1s ease-in-out;
+      &:hover{
+        opacity: .8;
+      }
+      &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .sale{
+    height: 30vh;
+    background-color: $mainColor;
+    color: $linkColor;
+    text-align: center;
+  }
+  h4{
+    line-height: 30vh;
+    font-size: 40px;
+    margin: 50px 0 0 0;
+  }
+  .btn-sho-more{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    .show-more-product{
+      width: 40%;
+      padding: 15px;
+      border: 1px solid $mainColor !important;
+      background-color: $mainColor !important;
+      color: $linkColor;
+    }
+  }
+}
+
+
+// product component
+.product-component{
+  margin-top: 20px;
+  text-align: left;
+  .card{
+    border: 0;
+    img{
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  .card-prise{
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .btn-link{
+    border: 2px solid $mainColor;
+    float: right;
+    text-decoration: none;
+  }
+  .status{
+    position: absolute;
+    color: $mainColor;
+    right: 0;
+    top: 6%;
+    text-align: center;
+    width: 100px;
+  }
+  .sale-number{
+    border: 2px solid $mainColor;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    font-weight: bold;
+    border-left: 1px solid #fff;
+    text-align: center;
+    width: 60px;
+  }
+}
+
+// product-details-page
+.product-details-page{
+  img{
+    width: 90%;
+  }
+  .product-info{
+    margin-top: 90px;
+    .product-name{
+      text-transform: uppercase;
+    }
+    .product-status{
+      color: $mainColor;
+    }
+    .product-rate{
+      color: #ffa534;
+    }
+    .product-sale{
+      color: $mainColor;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .product-description{
+      font-size: 18px;
+    }
+    .product-quantity{
+      padding: 10px;
+      border: 1px solid $mainColor;
+      margin-bottom: 20px;
+    }
+    .product-total{
+      color: $mainColor;
+    }
+    .btn{
+      background-color: $mainColor !important;
+      border: 1px solid $mainColor;
+      color: $linkColor;
+      margin-top: 20px;
+      border-radius: 0 !important;
+      padding: 15px;
+      width: 30%;
+    }
+    .btn-danger{
+      background-color: #C82333 !important;
+      border: 1px solid #C82333 !important;
+      margin-left: 10px;
+    }
+  }
+}
+
+// cart page
+.cart-page{
+  .total-price{
+    font-size: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    .total-price-number{
+      color: $mainColor;
+    }
+  }
+}
+
+// cartItem Component
+.cart-item-component{
+  margin-top: 40px;
+  .card{
+    border: 1px solid #DDD !important;
+    border-radius: 0 !important;
+    margin-top: 5px;
+    .product-image{
+      width: 45% !important;
+      margin: 0 auto;
+    }
+    .card-header{
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      color: $linkColor;
+      .product-status{
+        position: absolute;
+        right: -1%;
+        top: 1.5%;
+        font-size: 15px;
+        border: 1px solid $linkColor;
+        color: $mainColor;
+        padding: 10px;
+        background-color: $linkColor;
+      }
+    }
+    .product-prise, .product-quantity{
+      color: $mainColor;
+      font-weight: bold;
+    }
+    .product-sale{
+      color: $mainColor;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .btn-link{
+      border: 2px solid #DC3545;
+      background-color: #DC3545;
+      text-decoration: none;
+      color: $linkColor;
+      border-radius: 0 !important;
+      margin: 10px 0 0 -1px;
+    }
+  }
+}
+
+// error page
+.error-message{
+  text-align: center;
+  margin-top: 10% !important;
+}
+
+// counter down Component
+.coundown-number{
+  color: $mainColor;
+  font-weight: bold;
+}
+
+// footer component
+.footer{
+  background-color: $mainColor;
+  height: 90px;
+  position: relative;
+  .links{
+    text-align: center;
+    line-height: 90px;
+    span{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid $mainColor;
+      background-color: #fff;
+      margin-left: 10px;
+      a{
+        i{
+          color: $mainColor;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes header-image-animatopn{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media(max-height: 524px) {
+  .sidenav {
+    padding-top: 15px;
+    .mobile-active-link{
+      font-size: 18px ;
+    }
+  }
+}
+
+@media(max-width: 524px){
+  .shopping_cart{
+    top: 30% !important;
+  }
+  .badge_number{
+    top: 15% !important;
+  }
+  .products-page{
+    .btn-sho-more{
+      .show-more-product{
+        width: 100%;
+      }
+    }
+  }
+  .product-details-page{
+    img{
+      width: 100% !important;
+    }
+    .btn{
+      width: 45% !important;
+    }
+  }
+}
+
+@media(max-width: 800px){
+    nav{
+    display: none !important;
+  }
+  .side-nav-button{
+    display: block !important;
+  }
+  .shopping_cart{
+    top: 30% !important;
+  }
+  .badge_number{
+    top: 15% !important;
+  }
+  .home-page{
+    overflow-x: hidden;
+    .row{
+      margin: 0 !important;
+    }
+    .header-image{
+      img{
+        width: 100% !important;
+        float: right;
+        
+      }
+    }
+    .content{
+      margin-top: 15%;
+      margin-left: 20px;
+    }
+  }
+  .products-page{
+    .search-heaeder{
+      margin-top: 0px !important;
+    }
+  }
+}

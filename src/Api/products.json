@@ -1,0 +1,118 @@
+{
+  "products":[
+    {
+      "id": 1,
+      "name": "brown chair",
+      "price": 1000,
+      "status": "best seller",
+      "image": "/images/product-images/pro-1.png",
+      "evaluation":5,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 2,
+      "name": "white chair",
+      "price": 300,
+      "status": "",
+      "image": "/images/product-images/pro-2.png",
+      "evaluation":5,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 3,
+      "name": "blue chair",
+      "price": 2000,
+      "status": "best seller",
+      "image": "/images/product-images/pro-3.png",
+      "evaluation":5,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 4,
+      "name": "selver table",
+      "price": 3000,
+      "status": "best rate",
+      "image": "/images/product-images/pro-4.png",
+      "evaluation":3,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 5,
+      "name": "zebra chair",
+      "price": 3000,
+      "status": "best seller",
+      "image": "/images/product-images/pro-5.png",
+      "evaluation":4,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 6,
+      "name": "gray big chair",
+      "price": 3000,
+      "status": "",
+      "image": "/images/product-images/pro-6.png",
+      "evaluation":4,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 6,
+      "name": "gold table",
+      "price": 3000,
+      "status": "free shape",
+      "image": "/images/product-images/pro-7.png",
+      "evaluation":5,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 6,
+      "name": "green chair",
+      "price": 3000,
+      "status": "best seller",
+      "image": "/images/product-images/pro-8.png",
+      "evaluation":5,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    }
+  ],
+  "productsSales":[
+    {
+      "id": 7,
+      "name": "brown table",
+      "price": 500,
+      "status": "free shape",
+      "image": "/images/product-sales-images/sale-1.png",
+      "evaluation":2,
+      "sale": 20,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 8,
+      "name": "chimer chair",
+      "price": 200,
+      "status": "free shape",
+      "image": "/images/product-sales-images/sale-2.png",
+      "evaluation":4,
+      "sale": 30,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 9,
+      "name": "product#11",
+      "price":1000,
+      "status": "good",
+      "image": "/images/product-sales-images/sale-1.png",
+      "evaluation":3,
+      "sale": 50,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    },
+    {
+      "id": 10,
+      "name": "product#12",
+      "price": 2000,
+      "status": "best seller",
+      "image": "/images/product-sales-images/sale-2.png",
+      "evaluation":5,
+      "sale": 10,
+      "descreption": "Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported."
+    }
+  ]
+}
